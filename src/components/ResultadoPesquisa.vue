@@ -1,0 +1,517 @@
+<template>
+  <b-container>
+      <ul>
+          <li v-for="dados in dados" :key="dados">{{dados.titulo}}</li>
+      </ul>
+  </b-container>
+</template>
+
+<script>
+export default {
+    name: "ResultadoPesquisa",
+    data(){
+        return{
+            dados:[
+
+{
+ "sugestoes": [
+             {
+          heading: "Pontos Turísticos",
+          icon: "camera",
+          titulo: "Teatro Municipal",
+          src:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Teatro_Municipal_-_panoramio_%284%29.jpg/1280px-Teatro_Municipal_-_panoramio_%284%29.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          heading: "Gastronomia",
+          icon: "egg-fried",
+          titulo: "Antiquarius",
+          src:
+            "https://media.istockphoto.com/photos/male-chef-cooking-spaghetti-on-stove-in-open-air-restaurant-picture-id1059836196?b=1&amp;k=6&amp;m=1059836196&amp;s=170667a&amp;w=0&amp;h=3U-O6eS-1BF2-bW9CtpNxzmre3Ztt46zV2rS78_rT8c=",
+
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+         preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          heading: "Family Friendly",
+          icon: "unlock",
+         titulo:"Jardim Botânico",
+        src: "https://cdn.pixabay.com/photo/2015/03/12/17/24/nature-670516__340.jpg",
+
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+         preco: 2,
+         sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          heading: "Para Casais",
+          icon: "emoji-heart-eyes",
+          titulo:"Passeio na Roda Gigante",
+        src: "https://cdn.pixabay.com/photo/2019/04/15/13/48/ferris-wheel-4129391__340.jpg",
+
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 3,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+         titulo:"Calçadão de Copacabana",
+        src: "https://cdn.pixabay.com/photo/2016/02/19/15/49/beach-1210567__340.jpg",
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo: "Bar Tradicional",
+          src:
+            "https://media.istockphoto.com/photos/bolinho-de-bacalhau-traditional-portuguese-cod-fish-croquette-picture-id896486300?b=1&amp;k=6&amp;m=896486300&amp;s=170667a&amp;w=0&amp;h=7u-gdd09UGOFgtdtfSoA9-Q89ul_BJBBrHtzvcc7UVw=",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Museu do Amanhã",
+        src: "https://cdn.pixabay.com/photo/2017/05/16/22/11/rio-de-janeiro-vacation-2319223__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 3,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Aprazível",
+        src: "https://vejario.abril.com.br/wp-content/uploads/2016/08/aprazivel.jpg?quality=70&amp;strip=info&amp;resize=680,453"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Cristo Redentor",
+        src: "https://cdn.pixabay.com/photo/2017/06/27/16/15/christ-the-redeemer-2447923__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"La paysage",
+        src: "https://cdn.pixabay.com/photo/2019/04/28/21/13/meat-4164429__340.jpg",
+
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Parque  da Catacumba",
+        src: "https://a.cdn-hotels.com/gdcs/production173/d123/424ce630-e42c-11e8-a0e4-0242ac110002.jpg",
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo: "Confeitaria Colombo",
+          src:
+            "https://cache.quantocustaviajar.com/blog/wp-content/uploads/2019/07/confeitaria-colombo-rio-de-janeiro-6-768x513.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+      ],
+  "praias": [
+        {
+          titulo: "Arpoador",
+          src:
+            "http://visit.rio/wp-content/uploads/2015/08/8499036920_e0d626a650_k-1024x678.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Grumari",
+        src: "https://cdn.pixabay.com/photo/2017/10/07/05/32/grumari-2825554__340.jpg",
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+
+        },
+        {
+          titulo:"Ipanema",
+        src: "https://cdn.pixabay.com/photo/2017/03/27/16/50/beach-2179624_960_720.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+  "pontos": [
+        {
+          titulo: "Teatro Municipal",
+          src:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Teatro_Municipal_-_panoramio_%284%29.jpg/1280px-Teatro_Municipal_-_panoramio_%284%29.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Aprazível",
+        src: "https://vejario.abril.com.br/wp-content/uploads/2016/08/aprazivel.jpg?quality=70&amp;strip=info&amp;resize=680,453"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Cristo Redentor",
+        src: "https://cdn.pixabay.com/photo/2017/06/27/16/15/christ-the-redeemer-2447923__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+  "dormir": [
+        {
+          titulo: "Hotel 1",
+          src:
+"https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156__340.jpg",          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Hotel 2",
+        src: "https://cdn.pixabay.com/photo/2018/06/14/21/15/the-interior-of-the-3475656__340.jpg"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Hotel 3",
+        src: "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+ "comer": [
+        {
+         titulo:"La paysage",
+        src: "https://media.istockphoto.com/photos/brazilian-churrasco-at-restaurant-with-a-view-picture-id906727438?b=1&amp;k=6&amp;m=906727438&amp;s=170667a&amp;w=0&amp;h=DYNifcv0myXkDxltBlBBO_jwWiotDf5PReuFjU-zKP8=",
+
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Aprazível",
+        src: "https://vejario.abril.com.br/wp-content/uploads/2016/08/aprazivel.jpg?quality=70&amp;strip=info&amp;resize=680,453"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+         titulo: "Bar Tradicional",
+          src:
+"https://cdn.pixabay.com/photo/2019/04/28/21/13/meat-4164429__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+  "hospitais": [
+        {
+          titulo: "Teatro Municipal",
+          src:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Teatro_Municipal_-_panoramio_%284%29.jpg/1280px-Teatro_Municipal_-_panoramio_%284%29.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Aprazível",
+        src: "https://vejario.abril.com.br/wp-content/uploads/2016/08/aprazivel.jpg?quality=70&amp;strip=info&amp;resize=680,453"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Cristo Redentor",
+        src: "https://cdn.pixabay.com/photo/2017/06/27/16/15/christ-the-redeemer-2447923__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+  "eventos": [
+        {
+          titulo: "Réveillon",
+          src:
+            "https://cdn.pixabay.com/photo/2015/01/21/16/40/new-year-606879_960_720.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Comemoração ao Fim da Pandemia",
+        src: "https://cdn.pixabay.com/photo/2016/11/29/07/42/bicycle-1868162__340.jpg"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Aglomeração em todos os lugares",
+        src: "https://cdn.pixabay.com/photo/2020/09/22/22/32/people-5594462__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+  "delegacias": [
+        {
+          titulo: "Delegacia do Catete",
+          src:
+            "https://upload.wikimedia.org/wikipedia/commons/c/cb/9%C2%AA_Delegacia_do_Rio.jpg",
+          seguranca: 4,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Uma outra Delegacia",
+        src: "https://cdn.pixabay.com/photo/2020/03/03/09/57/city-buildings-4898205__340.png",
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Terceira Delegacia",
+        src: "https://cdn.pixabay.com/photo/2020/03/03/09/57/city-buildings-4898205__340.png",
+          seguranca: 1,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ],
+  "banheiros": [
+        {
+          titulo: "Centro do Rio",
+          src:
+            "https://cdn.pixabay.com/photo/2017/08/08/12/07/toi-toi-2611239__340.jpg",
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Rodoviária",
+        src: "https://cdn.pixabay.com/photo/2014/02/13/11/57/wc-265279__340.jpg"
+,
+          seguranca: 3,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 1,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        {
+          titulo:"Banheiro chique",
+        src: "https://cdn.pixabay.com/photo/2016/03/27/22/59/wc-1284608__340.jpg",
+          seguranca: 5,
+          sobre_seguranca:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          preco: 4,
+          sobre_preco:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+          review:
+            "Vivamus porttitor et sapien. Praesent in gravida lorem.",
+        },
+        
+      ]
+}
+      ]
+        }
+    }
+
+}
+</script>
+
+<style>
+
+</style>
